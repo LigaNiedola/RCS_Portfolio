@@ -5,9 +5,9 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #18be13;
-  --secondary-color: #ff7235;
+  --bg-color: #edf1f4;
+  --primary-color: #283834;
+  --secondary-color:#44334a;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
@@ -41,6 +41,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+  background-color: var(--bg-color);
 }
 
 nav {
@@ -52,7 +53,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
+    background-image: linear-gradient(147deg, #c3cbdc 1%, #edf1f4 54%);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
@@ -91,21 +92,26 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
     max-width: 68.75rem;
     padding-top: 4rem;
     margin: auto;
   }
 
   .hero img {
-    height: 20rem;
-    width: 35rem;
+    height: 25rem;
+    width: 18rem;
+    margin: auto;
+    border-radius: 4rem;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+
   }
   
   .bio {
     width: 25rem;
     padding: 0.625rem;
-    border-radius: 6px;
+    background-color: #c3cbdc;
+    background-image: linear-gradient(147deg, #c3cbdc 1%, #edf1f4 54%);
+    border-radius: 1rem 1rem 1rem 0rem;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
   }
   
@@ -137,11 +143,11 @@ nav ul li {
     max-width: 68.75rem;
     margin: auto;
     text-align: center;
-    margin-top: 2.5rem;
+    padding-top: 3rem;
   }
   
   .skill-header {
-    margin-bottom: 1rem;
+    padding-top: 3rem;
   }
   
   .skills-wrapper img {
@@ -154,7 +160,8 @@ nav ul li {
   }
 
   .icon-card {
-    background-color: #fff;
+    background-color: #c3cbdc;
+    background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 54%);
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
     padding: 20px;
@@ -164,28 +171,29 @@ nav ul li {
   .projects {
     background-color: var(--bg-color);
     padding: 32px 0;
-    margin-top: 2rem;
   }
   
   .project-pic {
     width: 65%;
-    height: 60%;
+    height: 55%;
   }
   
   .projects-container {
     display: flex;
     align-items: center;
     justify-content: center;
+ 
   }
 
   .projects-title {
     text-align: center;
     margin-bottom: 1rem;
+    padding-top: 4rem;
   }
   
   .project-container {
     text-align: center;
-    width: 21.875rem;
+    width: 22rem;
     padding: 1rem;
   }
 
@@ -202,11 +210,30 @@ nav ul li {
   }
   
   .project-card {
-    background-color: #fff;
+    background-color: #c3cbdc;
+    background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 54%);
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+  }
+
+  .project-link{
+    border-radius: 0.5rem;
+    border-color: #44334a;
+	  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 54%);
+    margin:20px; 
+    display:inline-block; 
+    padding: 20px;
+  }
+
+  .project-link:hover{
+    background-color: #c3cbdc;
+    background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 84%);
+    border-color: #5b5d73;
+    border-style: solid;
+    border-width: thin;
+
   }
 
   .contact {
@@ -224,6 +251,8 @@ nav ul li {
     padding: 0.938rem;
     border-radius: 5px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
+    background-color: #c3cbdc;
+    background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 54%);
   }
 
   .contact-form-container label {
@@ -266,7 +295,8 @@ nav ul li {
   }
 
   .submit-btn:hover {
-    background-color: var(--primary-color);
+    background-color: #c3cbdc;
+    background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 84%);
     border: 2px solid var(--primary-color);
     cursor: pointer;
   }
@@ -361,7 +391,6 @@ i {
   transform: translate(0, -8);
 }
 
-
 .scroll-container {
   position: absolute;
   top: 0;
@@ -436,14 +465,14 @@ footer  img {
       }
 
       .hero {
-        margin-top: -4rem;
+        margin-top: -1rem;
         flex-direction: column;
         gap: 0;
       }
     
       .hero img {
-            height: 25rem;
-            width: 35rem;
+            height: 20rem;
+            width: 15rem;
         }
     
       .bio {
@@ -471,8 +500,8 @@ footer  img {
 
   @media screen and (max-width: 420px) {
     .hero img {
-      height: 12rem;
-      width: 13rem;
+      height: 18rem;
+      width: 14rem;
     }
   
     .bio {
@@ -498,7 +527,8 @@ footer  img {
 
 
 .download {
-  background: #ffffff;
+  background-color: #c3cbdc;
+  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 54%);
   border: solid 1px #e6e6e6;
   border-radius: 2px;
   display: inline-block;
@@ -547,11 +577,6 @@ footer  img {
 
 .download:before {
   margin: -23px 0 0 -5px;
-}
-
-.download:hover {
-  background: #d0f4c2ce;
-  border-color: #c2f4bb;
 }
 
 .download span:first-child {

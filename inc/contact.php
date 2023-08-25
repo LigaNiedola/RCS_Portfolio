@@ -11,7 +11,7 @@ $recipient = "niedola.liga@gmail.com";
 
 mail($recipient, $subject, $message, $mailheader)
 or die ("Error!");
-
+//for presenting portfolio and testing e-mail 
 echo'
     <!DOCTYPE html>
     <html lang="en">
