@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+  }
+  
+  .header-video {
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #cart {
+    padding-right: 25px;
+  }
+  
+  #cart-count {
+    color: rgb(156, 16, 9);
+    font-size: 22px;
+    text-decoration: seagreen;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .fa-shopping-cart {
+    color: #ffffff;
+  }
+  
+  .nav {
+    width: 100vw;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    align-items: center;
+  }
+  
+  .nav-menu {
+    display: flex;
+    padding: 0vh 3vh;
+  }
+  
+  .nav-menu a {
+    display: none;
+  }
+  
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .price-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-to-cart-button {
+    padding: 5px 10px;
+  }
+  
+  #root {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 20px 80px;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 6px;
+    position: relative;
+    margin: 10px;
+  }
+  
+  .product > img {
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .product > div {
+    margin-top: 10px;
+  }
+  
+  .product h4 {
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+  .product p {
+    color: black;
+    text-align: justify;
+    white-space: wrap;
+  }
+  
+  .product p > span {
+    font-weight: bold;
+    color: black;
+    white-space: wrap;
+  }
+  
+  .delete-button {
+    border-radius: 100%;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

@@ -1,0 +1,46 @@
+.board {
+  font-size: 100px;
+  display:grid;
+  grid-template: repeat(3, 1em) / repeat(3, 1em);
+  gap:5px;
+
+}
+
+.cell {
+  font-size: .7em;
+  line-height:.7em;
+  vertical-align: top;
+}
+
+.popup_container {
+  display:none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.494);
+
+
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_container.open {
+  display:flex;
+}
+
+.popup {
+  background:white;
+  padding:10px;
+  min-width: 250px;
+  max-width:90vw;
+
+  min-height: 200px;
+  border-radius:5px;
+  box-shadow: 5px 8px 32px 0px rgba(0,0,0,0.75);
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
