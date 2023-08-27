@@ -9,10 +9,11 @@
 	<title>Līga Niedola | Web Developer</title>
 </head>
 <body>
+	<div class="navbar-container"></div>
 	<nav>
 		<h1>LĪGA NIEDOLA</h1>
 		<ul class="navigation">
-			<li><a href="#about" class="nav-link">About</a></li>
+			<li><a href="#about-me" class="nav-link">About</a></li>
 			<li><a href="#skills" class="nav-link">Skills</a></li>
 			<li><a href="#projects" class="nav-link">Projects</a></li>
 			<li><a href="#contact" class="nav-link">Contact</a></li>
@@ -21,24 +22,24 @@
 			<ion-icon class="bars" name="menu-outline"></ion-icon>
 		</button>
 	</nav>
-  
+</div>
 	<section class="hero" id="about">
 		<img
-			src="assets/images/dd.jpeg"
+			src="assets/images/profile.jpeg"
 			alt="jane-doe"
 			loading="lazy"
 			class="hero-img"
 		/>
 		<div class="bio animate__animated animate__shakeX">
-			<h2 class="bio-title">About Me</h2>
+			<h2 class="bio-title">Hello, I'm Līga!</h2>
 			<p class="bio-text">
-				Hello, I'm Līga! I am a web developer. I have over year of professional software development experience, and four years of coding as a hobby. 
+				Web developer in training - a student at the Riga Coding School studying WEB development.
 			</p>
 		</div>
 	</section>
 	
-	<section class="more-about">
-		<h2>More About Me</h2>
+	<section class="about-me" id="about-me">
+		<h2>About Me</h2>
 		<p>
 			If you want to know a bit about me then, I would describe myself as a passionate learner and someone who's interested in finding ways to better myself.
 		</p>
@@ -47,7 +48,7 @@
 			I value writing human-readable code, and building interfaces that equally weigh beautiful design with accessibility for all.
 		</p>
 		<p>
-			I work as a developer in AE Partner, Liepāja. I'm currently working on a couple of projects, but I'm always interested in getting involved with new projects if it's a good fit. So if you have something you think I can help with, please feel free to send me an email.	
+			I have four years of coding as a hobby. I work in AE Partner, Liepāja. I'm currently working on a couple of projects, but I'm always interested in getting involved with new projects if it's a good fit. So if you have something you think I can help with, please feel free to send me an email.	
 		</p>
 		<div class="download">
 			<a href="assets/CV.pdf" target="_blank">
@@ -55,23 +56,81 @@
 			<span>CV</span></a>
 		<div>
 	</section>
-	
-	<section class="skills" id="skills">
-		<h2 class="skill-header">My Top Skills</h2>
-		<div class="skills-wrapper">
-			<div class="first-set animate__animated animate__pulse">
-				<img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card"/>
-				<img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card"/>
-				<img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card"/>
-			</div>
 
-			<div class="second-set animate__animated animate__pulse">
-				<img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card"/>
-				<img src="assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card"/>
-				<img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card"/>
-			</div>
+	<section class="about_skills" id="skills">
+		<div class="container">
+		<h2 class="skill-header">My Skills</h2>
+			<div class="about-content">
+				<div class="left-content">
+					<div class="skills-wrapper">
+						<div class="first-set animate__animated animate__pulse">
+							<img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card"/>
+							<img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card"/>
+							<img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card"/>
+						</div>
+			
+						<div class=" animate__animated animate__pulse">
+							<img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card"/>
+							<img src="assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card"/>
+							<img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card"/>
+						</div>
+					</div>
+				</div>
+
+				<div class="right-content">
+					<div class="skills-bar">
+						<div class="bar">
+							<div class="info">
+								<span>HTML</span>
+							</div>
+							<div class="progress-line">
+								<span class="html"></span>
+							</div>
+							<div class="bar">
+								<div class="info">
+									<span>CSS</span>
+								</div>
+								<div class="progress-line">
+									<span class="css"></span>
+								</div>
+								<div class="bar">
+									<div class="info">
+										<span>JAVASCRIPT</span>
+									</div>
+									<div class="progress-line">
+										<span class="javascript"></span>
+									</div>
+									<div class="bar">
+										<div class="info">
+											<span>BOOTSTRAP</span>
+										</div>
+										<div class="progress-line">
+											<span class="bootstrap"></span>
+										</div>					
+										<div class="bar">
+											<div class="info">
+												<span>REACT</span>
+											</div>
+											<div class="progress-line">
+												<span class="react"></span>
+											</div>
+											<div class="bar">
+												<div class="info">
+													<span>GIT</span>
+												</div>
+											<div class="progress-line">
+												<span class="git"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+				  			</div>
+						</div>
+			  		</div>
+				</div>
+		  	</div>
 		</div>
-	</section>
+	</section> 
 
 	<section class="projects" id="projects">
 		<h2 class="projects-title">Some of my Recent Projects</h2>
@@ -80,7 +139,7 @@
 				<img src="assets/images/tropico.png" alt="Tropico" loading="lazy" class="project-pic"/>
 				<h3 class="project-title">Tropico</h3>
 				<p class="project-details">
-					CSS Website example for your inspiration.
+					CSS site example for your inspiration.
 				</p>
 				<a href="/Projects/Tropico CSS/index.html" target="_blank" class="project-link">Check it Out</a>
 			</div>
@@ -88,23 +147,22 @@
 				<img src="assets/images/shop.png" alt="Shopping" loading="lazy" class="project-pic"/>
 				<h3 class="project-title">Shop</h3>
 				<p class="project-details">
-					JS online store for your inspiration.</p>
+					A JavaScript store for your inspiration.</p>
 				<a href="/Projects/Shop JS/shop.html" target="_blank" class="project-link">Check it Out</a>
 			</div>
 			<div class="project-container project-card">
 				<img src="assets/images/tic_tac_toe.png" alt="Tic-Tac-Toe" loading="lazy" class="project-pic"/>
 				<h3 class="project-title">Tic Tac Toe</h3>
 				<p class="project-details">
-					Tic-Tac-Toe game.
+					Tic-Tac-Toe a simple game for 2 players.
 				</p>
 				<a href="/Projects/Tic Tac Toe/index.html" target="_blank" class="project-link">Check it Out</a>
 			</div>
 		</div>
 	</section>
 
-	<section class="contact" id="contact">
-		<h2>Feel free to contact me!</h2>
-		<p></p>
+	<section class="contact" id="contact">	
+		<h2>Feel free to contact me!</h2>	
 		<div class="contact-form-container">
 			<form action="inc/contact.php" method="POST">
 				<label for="name">Name</label>
@@ -145,8 +203,14 @@
 					class="submit-btn"
 				/>
 			</form>
-		</div>	
-	</section>
+		</div>	 
+		<div id="gmap-canvas">
+			<iframe 
+			frameborder="0" 
+			src="https://www.google.com/maps/embed/v1/search?q=Priežu+iela+11,+Grobiņa,+Grobiņa+pilsēta,+Dienvidkurzemes+novads,+Latvia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+			</iframe>
+		</div>
+</section>
 
 	<div class="socials">
 		<a href="https://www.instagram.com/___liga___/" target="_blank">
@@ -162,7 +226,6 @@
 			<img src="assets/icons/icons8-github.svg" alt="Github" class="socicon"/>
 		</a>
 	</div>
-
 
 	<footer>
 		<img src="assets/icons/icons8-upward-arrow.svg" id="scrollToTopBtn"/>
