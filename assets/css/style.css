@@ -515,8 +515,6 @@ nav ul li {
 }
 
 /* Footer and Scroll up button*/
-
-
 #scrollToTopBtn {
     position: sticky;
     top: 0;
@@ -541,6 +539,132 @@ footer p{
 }
 
 /* @media  */
+@media (min-width: 1025px) {
+     /* Hero and about me */
+     .hero {
+        margin-top: 1rem;
+        padding: 1.5rem;
+        gap: 10vw;
+    }
+
+    .hero img {
+        height: 17rem;
+        width: 13rem;
+        margin: 4rem 0;
+    }
+
+    .bio {
+        font-size: 1rem;
+        width: 40vw;
+        margin-top: 3rem;
+    }
+
+    .bio p{
+        font-size: 1.1rem;
+    }
+
+   /* About me */
+   .about-me {
+       padding: 1rem 4rem;
+   }
+
+   .about-me h2 {
+       padding-top: 4.6rem;
+   }
+
+   .about-me p {
+       padding-bottom: 0rem;
+   }
+
+    /* Skill section */   
+    .about-content .left-content {
+        margin-top: 1.5rem;
+        flex-basis: 55%;
+    }
+
+    .icon-card {
+        padding: 1vw;
+        margin: 0.5vw;
+    }
+    
+    .about-content img {
+        width: 10vw;
+        height: auto;
+    }
+
+    .skills-bar .bar {
+        margin: 1.5vw 0;
+    }
+    
+    .skills-bar .bar .info {
+        margin-bottom: 0.5vw;
+    }
+    
+    .skills-bar .bar .progress-line {
+        width: 35vw
+    }
+
+    .socicon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+  }
+
+
+@media screen and (max-width: 1024px) {
+
+    /* Hero and about me */
+    .hero {
+        margin-top: -1rem;
+        padding: 1.5rem;
+        gap: 14vw;
+    }
+
+    .hero img {
+        height: 15rem;
+        width: 11rem;
+        margin: 5rem 0;
+    }
+
+    .bio {
+        font-size: 1rem;
+        width: 35vw;
+        margin-top: 1rem;
+    }
+   /* About me */
+   .about-me {
+       padding: 1rem 2rem;
+   }
+
+   .about-me h2 {
+       padding-top: 4.6rem;
+   }
+
+   .about-me p {
+       padding-bottom: 0rem;
+   }
+
+    /* Skill section */
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-bar {
+        flex-direction: column;
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .about-content img {
+        width: 20vw;
+        height: auto;
+    }
+
+}
+
 @media screen and (max-width: 720px) {
     nav {
         padding: 1.5rem 1rem;
@@ -654,24 +778,6 @@ footer p{
         max-width: 80vw;
     }
     
-    .contact-form-container label {
-        line-height: 1.8rem;
-    }
-    
-    .contact-form-container .input-field {
-        font-size: 0.8rem;
-    }
-    
-    .input-field::placeholder {
-        padding: 0.5rem;
-        color: var(--primary-color);
-    }
-    
-    .submit-btn {
-        padding: 0.2rem;
-        margin-top: 0.5rem;
-    }
-
     /* Footer and Scroll up button*/
     #scrollToTopBtn {
         width: 2rem;
