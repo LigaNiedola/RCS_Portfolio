@@ -438,9 +438,26 @@ nav ul li {
 
 /* Contact section */
 .contact h2 {
-    padding: 6rem 0 1rem 0;
+    padding-top: 6rem;
     color: var(--secondary-color);
 }
+
+.contact_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.contact_container {
+    text-align: left;
+    padding: 0 20px;
+    width: 40vw;
+  }
+
+  .contact_container p{
+    padding: 0.3rem 0;
+  }
 
 .contact-form-container {
     max-width: 35rem;
@@ -539,6 +556,16 @@ footer p{
 }
 
 /* @media  */
+@media (min-width: 1465px) {
+    /* Hero and about me */
+
+    .contact_container {
+        text-align: left;
+        padding: 0 20px;
+        width: 20vw;
+      }
+
+}
 @media (min-width: 1025px) {
      /* Hero and about me */
      .hero {
@@ -777,6 +804,13 @@ footer p{
     .contact-form-container {
         max-width: 80vw;
     }
+
+    .contact_container {
+        text-align: left;
+        padding: 0 20px;
+        width: 70vw;
+      }
+    
     
     /* Footer and Scroll up button*/
     #scrollToTopBtn {
@@ -786,6 +820,7 @@ footer p{
     iframe {
        display: none;
     }
+
 
 }
 
